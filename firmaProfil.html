@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Profil.css">
+  <title>FİRMA PROFİL</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand bg-light py-4">
+    <div class="container-fluid">
+      <a id="nav-link" class="navbar-brand" href="#">ŞİKAYETVAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" datatarget="#collapsibleNavbar"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="#">Şikayetler</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Şikayet Arama" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Arama</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-3">
+      <div class="flex-shrink-0 p-3 bg-white" style="width: 280px; height: 100vh;">
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <svg class="bi pe-none me-2" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <span id="links" class="fs-5 fw-semibold">PROFİLİM</span>
+        </a>
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+              data-toggle="collapse" data-target="#home-collapse" aria-expanded="false">
+              Profili Düzenle
+            </button>
+            <div class="collapse show" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Firma Bilgileri
+                  </a>
+                </li>
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Bildirimler</a>
+                </li>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+              data-toggle="collapse" data-target="#dashboard-collapse" aria-expanded="true">
+              Şikayetlerim
+            </button>
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Şikayetlerim</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="border-top my-3"></li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+              data-toggle="collapse" data-target="#account-collapse" aria-expanded="false">
+              Hesabım
+            </button>
+            <div class="collapse" id="account-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Ayarlar</a></li>
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Hesabı Kapat</a>
+                </li>
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Çıkış Yap</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-9 mt-5">
+      <div class="profilduzenle">
+
+        <label for="ad">Firma ID</label>
+        <div class="input-group mb-3 mr-2">
+          <input type="text" class="form-control" placeholder="Firma-ID giriniz" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
+
+
+
+      </div>
+
+
+      <select class="form-select my-3" aria-label="Default select example">
+        <option selected>
+          <Fieldset>Firmanın şehri</Fieldset>
+        </option>
+        <option value="1">İstanbul</option>
+        <option value="2">İzmir</option>
+        <option value="3">Ankara</option>
+        <option value="4">Bursa</option>
+        <option value="5">Diyarbakır</option>
+        <option value="6">Konya</option>
+        <option value="7">AfyonKarahisar</option>
+      </select>
+
+      <div class="input-group">
+
+        <textarea class="form-control" aria-label="With textarea"
+          placeholder="Firmanız hakkında bir şeyler yazın"></textarea>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

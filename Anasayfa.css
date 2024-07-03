@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background-color: rgb(178, 178, 178);
+  }
+  
+  html {
+    height: -webkit-fill-available;
+  
+  }
+  
+  .nav-item:hover {
+    background-color: #ddd;
+    color: black;
+
+}
+
+  #nav-link {
+    color: black;
+  }
+
+  #ikon{
+    color: #ddd;
+}
+
+.baslik{
+  color: #ddd;
+}
+
+#sikayetButon{
+  text-align: center;
+}
+
+#girisyapnav{
+  justify-content: end;
+  float: inline-end;
+}
+
+
+.anaSayfaSiralamaBaslik {
+  text-align: center;
+  justify-content: center;
+}
+
+.anaSayfaSiralama ul {
+  padding: 0;
+}
+
+.anaSayfaSiralama li {
+  list-style: none;
+  background-color: #ddd;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.anaSayfaSiralama li small {
+  float: right;
+}
+
+.anaSayfaSiralama .oge {
+  border-radius: 50%;
+  /* background-color: blueviolet; */
+}
+
+.nasilCalisirAlani {
+  height: 100%;
+  margin: 20px;
+  background-color: black;
+  padding: 50px;
+}
+
+.nasilCalisirAlani .row {
+  max-width: 20px;
+}
+
+.nasilCalisir {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 5px;
+}
+
+.foto {
+  float: right;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.foto img {
+  box-sizing: border-box;
+  display: block;
+  max-width: 80%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+.istatistikler {
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+  border-radius: 5px;
+  padding: 5px;
+  max-width: 575px;
+}
+
+.istatistik small {
+  display: block;
+}
+
+.container-fluid{
+  justify-content: center;
+  text-align: center;
+}
+
+#baslik{
+  color: black;
+}

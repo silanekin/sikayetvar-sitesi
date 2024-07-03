@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="müsteriProfilsikayet.css">
+  <title>Müşteri Profil Şikayet Sayfası</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand bg-light py-4">
+    <div class="container-fluid">
+      <a id="nav-link" class="navbar-brand" href="#">ŞİKAYETVAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" datatarget="#collapsibleNavbar"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="#">Şikayetler</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Şikayet Arama" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Arama</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-3">
+      <div class="flex-shrink-0 p-3 bg-white" style="width: 280px; height: 100vh;">
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <svg class="bi pe-none me-2" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <span id="links" class="fs-5 fw-semibold">PROFİLİM</span>
+        </a>
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+              data-toggle="collapse" data-target="#home-collapse" aria-expanded="false">
+              Profili Düzenle
+            </button>
+            <div class="collapse show" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Kişisel
+                    Bilgiler</a>
+                </li>
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Bildirimler</a>
+                </li>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+              data-toggle="collapse" data-target="#dashboard-collapse" aria-expanded="true">
+              Şikayetlerim
+            </button>
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Şikayetlerim</a>
+                </li>
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Şikayet Yaz</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="border-top my-3"></li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+              data-toggle="collapse" data-target="#account-collapse" aria-expanded="false">
+              Hesabım
+            </button>
+            <div class="collapse" id="account-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Ayarlar</a></li>
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Hesabı Kapat</a>
+                </li>
+                <li><a href="#" id="links" class="link-dark d-inline-flex text-decoration-none rounded">Çıkış Yap</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-9">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Hepsiburada 5. Damacana 1 TL Kazanılan Hakkın Geri Alınması</h5>
+              <p class="card-text">Hepsiburada 5. Damacana 1 TL kampanyası hakkımı 16.12.2022 tarihinde
+                kazandım. Elimde mevcutta su bulunduğundan ve şehir dışına da çıkmam dolayısıyla hakkımı
+                bugün kullanmak istediğimde kampanyanın iptal edildiğini gördüm.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">iPhone Magsafe Deri Kılıf Renk Atması</h5>
+              <p class="card-text">16/11/2022 Tarihinde Turkcell Pasaj ® üzerinden 1,224 TL tutarında
+                satın almış olduğum ''Apple iPhone 14 Pro için magsafe özellikli deri kılıf toprak
+                kırmızısı'' ürünümün 1 Ay içerisinde az kullanılmasına rağmen soyulmuş, renk atmış ve
+                deforme oluşmuştur. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Huawei Uygulama İçi Satın Alma</h5>
+              <p class="card-text">Huawei P40 Lite telefonum var. Yaklaşık 3 haftadır uygulama içi satın
+                alma işlemi gerçekleştiremiyorum. (PUBG Mobile uc) Önceden çok rahat alışveriş
+                yapabiliyordum. Tüm güncellemeleri sistem izinlerini ve ödeme yöntemlerimi kontrol ettim
+                sorun görünmüyor ancak problem devam ediyor. Huawei bu konuda destek verebilir mi?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Vodafone Fırsat 20 GB Ek İnternet İptal Edemiyorum</h5>
+              <p class="card-text">Fırsat 20 GB ek internet paketi aldım tekrarlı olduğu için iptal etmek
+                istiyorum ancak 542 i 7000 ve self serviste iptal edemiyorum tanımlı internet paketiniz yok
+                bilgisi geliyor bana iptal edemiyorum. Müşteri temsilcisine bağlanamıyorum buradan yardımcı
+                olun</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Huawei Uygulama İçi Satın Alma</h5>
+              <p class="card-text">Huawei P40 Lite telefonum var. Yaklaşık 3 haftadır uygulama içi satın
+                alma işlemi gerçekleştiremiyorum. (PUBG Mobile uc) Önceden çok rahat alışveriş
+                yapabiliyordum. Tüm güncellemeleri sistem izinlerini ve ödeme yöntemlerimi kontrol ettim
+                sorun görünmüyor ancak problem devam ediyor. Huawei bu konuda destek verebilir mi?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Migros Asla Süre Seçeneğine İtibar Edilmiyor</h5>
+              <p class="card-text">Migros sanal market Urla Şb...'den 45dk teslimat süresi seçerek
+                verdiğim hiçbir sipariş 1,5 saatten önce teslim olmuyor. Bu opsiyonu sağlayamıyor iseniz
+                lütfen müşteriye de sunmayın. 15 dakika ek süreyi anlayabilirim ancak her defasında 1 saat
+                geciktirilmez. Lütfen aksiyon alın.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">A101 Online Alışverişin Çözülmeyen Mağduriyeti</h5>
+              <p class="card-text">27 Kasım'da bir dolap siparişi verdim 15 iş günü yazan A101 web
+                sitesi önce gecikmesi var dedi aciliyet belirttim 24 Aralık'ta gelecek dedi yeter ki gelsin
+                dedim bu sefer 2 Ocak'a attı ne iptal edebiliyorum bu kadar bekledim ne dolabım geliyor
+                üstelik paramı da çektiler must hız. Bir destek sağlamıyor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">VakıfBank Şubesinde Hesap Açtırılmaması</h5>
+              <p class="card-text">27.12.2022 tarihinde, saat 10.30'da VakıfBank Bingöl Merkez şubeye eşim
+                ile gittik. 18 yaşından küçük olan çocuğumuz için vadesiz hesap açmak istediğimizi
+                belirttik. Ancak şube müdürünün talimatı ile mi bilmiyorum bize ''bir iki hafta sonra
+                gelmeniz gerekir'' dendi çalışan memur tarafından. Çocuğumun geleceği için onun hesabına
+                yatırım yapmak istiyoruz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

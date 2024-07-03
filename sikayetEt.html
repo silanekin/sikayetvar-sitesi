@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="sikayetEt.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand bg-light">
+        <div class="container-fluid">
+          <a id="nav-link" class="navbar-brand" href="#">ŞİKAYETVAR</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" datatarget="#collapsibleNavbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="nav-link" class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a id="nav-link" class="nav-link" href="#">Şikayetler</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Şikayet Ara" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Arama</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div id="sikayetEtme">
+            <input type="text" id="sikayetBaslik" placeholder="Şikayetinizin Konusu Nedir?">
+            <br><br>
+            <input type="text" id="adSoyad" placeholder="Adınızı Soyadınızı Giriniz...">
+            <br><br>
+            <textarea name="" id="sikayetDetay" cols="30" rows="10" placeholder="Şikayet Detayı"></textarea>
+            <button id="yolla">Şikayeti Yolla</button>
+        </div>
+    </div>
+
+    <script>
+      $("#yolla").click(function() {
+          var baslik = $("#sikayetBaslik").val();
+          var aciklama = $("#sikayetDetay").val();
+          var adSoyad = $("#adSoyad").val();
+          localStorage.setItem("baslik", baslik);
+          localStorage.setItem("aciklama", aciklama);
+          localStorage.setItem("adSoyad", adSoyad);
+          window.location.href = "musteriSikayetListe.html";
+      });
+   </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+</html>
